@@ -1,0 +1,382 @@
+ 2024-02-16T19:51:05.531Z INFO  eww > Initializing Eww server. (/run/user/1000/eww-server_e28e5717febef3b8)
+Run `eww logs` to see any errors while editing your configuration.
+ 2024-02-16T19:51:05.531Z INFO  eww::server > Loading paths: config-dir: /home/jake/.config/eww, ipc-socket: /run/user/1000/eww-server_e28e5717febef3b8, log-file: /home/jake/.cache/eww_e28e5717febef3b8.log
+
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃Initializing eww daemon┃
+┗━━━━━━━━━━━━━━━━━━━━━━━┛
+    
+ 2024-02-16T19:51:05.584Z INFO  eww::ipc_server > IPC server initialized
+ 2024-02-16T19:51:05.749Z INFO  eww::app        > Opening window bar as 'bar'
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `[{'window'}]` into a value of type json-value[0m
+  [0m[34m┌─[0m modules/workspaces.yuck:4:31
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (for workspace in [0m[31mworkspaces[0m
+  [0m[34m│[0m                               [0m[31m──────────[0m [0m[31m`[{'window'}]` is not of type `json-value`[0m
+  [0m[34m│[0m
+  [0m[34m→[0m key must be a string at line 1 column 3
+
+
+
+ 2024-02-16T19:51:05.775Z INFO  eww::app        > Opening window notifications_popup as 'notifications_popup'
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:119
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {notify.image != "null" ? true :false} :path {[0m[31mnotify.image[0m} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                                                                       [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:74
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {[0m[31mnotify.image[0m != "null" ? true :false} :path {notify.image} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                          [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:74
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {[0m[31mnotify.image[0m != "null" ? true :false} :path {notify.image} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                          [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:123
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {notify.app != "null" ? true :false} :text {[0m[31mnotify.app[0m})
+  [0m[34m│[0m                                                                                                                           [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:80
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {[0m[31mnotify.app[0m != "null" ? true :false} :text {notify.app})
+  [0m[34m│[0m                                                                                [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:80
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {[0m[31mnotify.app[0m != "null" ? true :false} :text {notify.app})
+  [0m[34m│[0m                                                                                [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:8:128
+  [0m[34m│[0m
+[0m[34m8[0m [0m[34m│[0m                     (button :hexpand true :halign "end" :class "notification-close" :onclick "scripts/notifications.sh close ${[0m[31mnotify.id[0m}" "󰅖")
+  [0m[34m│[0m                                                                                                                                [0m[31m─────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:140
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {notify.summary != "null" ? true :false} :wrap true :markup {[0m[31mnotify.summary[0m})
+   [0m[34m│[0m                                                                                                                                            [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:80
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {[0m[31mnotify.summary[0m != "null" ? true :false} :wrap true :markup {notify.summary})
+   [0m[34m│[0m                                                                                [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:80
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {[0m[31mnotify.summary[0m != "null" ? true :false} :wrap true :markup {notify.summary})
+   [0m[34m│[0m                                                                                [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:134
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {notify.body != "null" ? true :false} :wrap true :markup {[0m[31mnotify.body[0m})
+   [0m[34m│[0m                                                                                                                                      [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:77
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {[0m[31mnotify.body[0m != "null" ? true :false} :wrap true :markup {notify.body})
+   [0m[34m│[0m                                                                             [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:77
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {[0m[31mnotify.body[0m != "null" ? true :false} :wrap true :markup {notify.body})
+   [0m[34m│[0m                                                                             [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:15:29
+   [0m[34m│[0m
+[0m[34m15[0m [0m[34m│[0m             (for action in {[0m[31mnotify.actions[0m}
+   [0m[34m│[0m                             [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:119
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {notify.image != "null" ? true :false} :path {[0m[31mnotify.image[0m} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                                                                       [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:74
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {[0m[31mnotify.image[0m != "null" ? true :false} :path {notify.image} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                          [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:74
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {[0m[31mnotify.image[0m != "null" ? true :false} :path {notify.image} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                          [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:123
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {notify.app != "null" ? true :false} :text {[0m[31mnotify.app[0m})
+  [0m[34m│[0m                                                                                                                           [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:80
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {[0m[31mnotify.app[0m != "null" ? true :false} :text {notify.app})
+  [0m[34m│[0m                                                                                [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:80
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {[0m[31mnotify.app[0m != "null" ? true :false} :text {notify.app})
+  [0m[34m│[0m                                                                                [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:8:128
+  [0m[34m│[0m
+[0m[34m8[0m [0m[34m│[0m                     (button :hexpand true :halign "end" :class "notification-close" :onclick "scripts/notifications.sh close ${[0m[31mnotify.id[0m}" "󰅖")
+  [0m[34m│[0m                                                                                                                                [0m[31m─────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:140
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {notify.summary != "null" ? true :false} :wrap true :markup {[0m[31mnotify.summary[0m})
+   [0m[34m│[0m                                                                                                                                            [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:80
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {[0m[31mnotify.summary[0m != "null" ? true :false} :wrap true :markup {notify.summary})
+   [0m[34m│[0m                                                                                [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:80
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {[0m[31mnotify.summary[0m != "null" ? true :false} :wrap true :markup {notify.summary})
+   [0m[34m│[0m                                                                                [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:134
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {notify.body != "null" ? true :false} :wrap true :markup {[0m[31mnotify.body[0m})
+   [0m[34m│[0m                                                                                                                                      [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:77
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {[0m[31mnotify.body[0m != "null" ? true :false} :wrap true :markup {notify.body})
+   [0m[34m│[0m                                                                             [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:77
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {[0m[31mnotify.body[0m != "null" ? true :false} :wrap true :markup {notify.body})
+   [0m[34m│[0m                                                                             [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:15:29
+   [0m[34m│[0m
+[0m[34m15[0m [0m[34m│[0m             (for action in {[0m[31mnotify.actions[0m}
+   [0m[34m│[0m                             [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:119
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {notify.image != "null" ? true :false} :path {[0m[31mnotify.image[0m} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                                                                       [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:74
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {[0m[31mnotify.image[0m != "null" ? true :false} :path {notify.image} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                          [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:4:74
+  [0m[34m│[0m
+[0m[34m4[0m [0m[34m│[0m             (image :valign "start" :class "notification-image" :visible {[0m[31mnotify.image[0m != "null" ? true :false} :path {notify.image} :image-width 48 :image-height 48)
+  [0m[34m│[0m                                                                          [0m[31m────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:123
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {notify.app != "null" ? true :false} :text {[0m[31mnotify.app[0m})
+  [0m[34m│[0m                                                                                                                           [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:80
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {[0m[31mnotify.app[0m != "null" ? true :false} :text {notify.app})
+  [0m[34m│[0m                                                                                [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:7:80
+  [0m[34m│[0m
+[0m[34m7[0m [0m[34m│[0m                     (label :halign "start" :class "notification-app" :visible {[0m[31mnotify.app[0m != "null" ? true :false} :text {notify.app})
+  [0m[34m│[0m                                                                                [0m[31m──────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+  [0m[34m┌─[0m modules/notifications.yuck:8:128
+  [0m[34m│[0m
+[0m[34m8[0m [0m[34m│[0m                     (button :hexpand true :halign "end" :class "notification-close" :onclick "scripts/notifications.sh close ${[0m[31mnotify.id[0m}" "󰅖")
+  [0m[34m│[0m                                                                                                                                [0m[31m─────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:140
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {notify.summary != "null" ? true :false} :wrap true :markup {[0m[31mnotify.summary[0m})
+   [0m[34m│[0m                                                                                                                                            [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:80
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {[0m[31mnotify.summary[0m != "null" ? true :false} :wrap true :markup {notify.summary})
+   [0m[34m│[0m                                                                                [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:10:80
+   [0m[34m│[0m
+[0m[34m10[0m [0m[34m│[0m                 (label :halign "start" :class "notification-summary" :visible {[0m[31mnotify.summary[0m != "null" ? true :false} :wrap true :markup {notify.summary})
+   [0m[34m│[0m                                                                                [0m[31m──────────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:134
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {notify.body != "null" ? true :false} :wrap true :markup {[0m[31mnotify.body[0m})
+   [0m[34m│[0m                                                                                                                                      [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:77
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {[0m[31mnotify.body[0m != "null" ? true :false} :wrap true :markup {notify.body})
+   [0m[34m│[0m                                                                             [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Failed to turn `` into a value of type bool[0m
+ [0m[34m→[0m provided string was not `true` or `false`
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:11:77
+   [0m[34m│[0m
+[0m[34m11[0m [0m[34m│[0m                 (label :halign "start" :class "notification-body" :visible {[0m[31mnotify.body[0m != "null" ? true :false} :wrap true :markup {notify.body})
+   [0m[34m│[0m                                                                             [0m[31m───────────[0m
+
+
+[0m[1m[38;5;9merror[0m[1m: Unable to index into value null[0m
+   [0m[34m┌─[0m modules/notifications.yuck:15:29
+   [0m[34m│[0m
+[0m[34m15[0m [0m[34m│[0m             (for action in {[0m[31mnotify.actions[0m}
+   [0m[34m│[0m                             [0m[31m──────────────[0m
+
+
+
+ 2024-02-16T19:51:05.810Z WARN  eww::script_var_handler > stderr of `network`: scripts/network.sh: linha 3: rg: comando não encontrado
+  File "/home/jake/.config/eww/scripts/notifications.py", line 18
+    cache_dir = f"{os.getenv('HOME')}/.cache/notify_img_data"
+                                                            ^
+SyntaxError: invalid syntax
+error: unrecognized subcommand 'windows'
+
+  tip: a similar subcommand exists: 'list-windows'
+
+Usage: eww [OPTIONS] <COMMAND>
+
+For more information, try '--help'.
+
+(process:25560): X11Helper-WARNING **: 17:00:52.330: Failed to find selected monitor.
+
+(process:25560): Helpers.IconFetcher-WARNING **: 17:00:52.352: Failed to load image: Falha ao abrir o arquivo “~/.config/swww/wall.rofi”: Arquivo ou diretório inexistente
+
+(process:25560): Helpers.IconFetcher-WARNING **: 17:00:52.352: Failed to load image: Falha ao abrir o arquivo “~/.config/swww/wall.blur”: Arquivo ou diretório inexistente
