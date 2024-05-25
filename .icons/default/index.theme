@@ -1,0 +1,8 @@
+# This file is written by nwg-look. Do not edit.
+[Icon Theme]
+Name=Default
+Comment=Default Cursor Theme
+Inherits=(process:29406): dconf-CRITICAL **: 21:56:49.731: unable to create file '/run/user/1000/dconf/user': Permissão negada.  dconf will not work properly.
+
+(process:29406): dconf-CRITICAL **: 21:56:49.732: unable to create file '/run/user/1000/dconf/user': Permissão negada.  dconf will not work properly.
+"(process:28464): dconf-CRITICAL **: 21:55:54.851: unable to create file '/run/user/1000/dconf/user': Permissão negada.  dconf will not work properly.\n\n(process:28464): dconf-CRITICAL **: 21:55:54.851: unable to create file '/run/user/1000/dconf/user': Permissão negada.  dconf will not work properly.\n'Adwaita'"

@@ -1,0 +1,98 @@
+.cycle-box {
+    @include window;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.cycle-entry {
+    margin: 0 0.5rem;
+}
+
+.cycle-button {
+    background-color: $surfaceVariant;
+    border-radius: 1rem;
+    transition: 0.3s;
+    padding: 3.25rem 4rem;
+    background-image: url("Power.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}
+
+.cycle-button:hover {
+    background-color: mix($surfaceVariant, $onSurfaceVariant, 70%);
+}
+
+.cycle-icon {
+    font-size: 4rem;
+}
+
+.cycle-text {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.Red-image {
+    background-image: url("/mnt/discos/Wallpapers/Red.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}
+
+.Pink-image {
+    background-image: url("/mnt/discos/Wallpapers/Pink.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}
+
+.Cyberpunk-image {
+    background-image: url("/mnt/discos/Wallpapers/Cyberpunk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}
+
+.Frieren-image {
+    background-image: url("/mnt/discos/Wallpapers/Frieren.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}
+
+.Green-image {
+    background-image: url("/mnt/discos/Wallpapers/Green.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}
+
+.wall-image {
+    background-image: url("/mnt/Disco/wallpapers/wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 12rem;
+    min-width: 12rem;
+    border-radius: 10%;
+}

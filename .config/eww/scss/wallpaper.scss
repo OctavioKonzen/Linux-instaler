@@ -1,0 +1,12 @@
+.wallpaper {
+    font-size: 1.5rem;
+    background-color: $primary;
+    color: $surface;
+    border-radius: 2rem;
+    padding: 0px 30px 0px 25px;
+    transition: 0.3s;
+}
+
+.wallpaper:hover {
+    background-color: mix($primary, $onSurface, 70%);
+}

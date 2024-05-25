@@ -1,0 +1,24 @@
+(defwidget wallpaper []
+    (button :class "wallpaper" :onclick "eww close cyclewall || eww open cyclewall"  :onrightclick "./scripts/cycling.sh" (label :text "󰸉"
+  )
+ )
+)
+
+(defwidget cyclewall_entry [icon class label onclick]
+    (box :orientation "v" :space-evenly false :class "cycle-entry"
+            (button :class "cycle-image" :class {class} :onclick {onclick} :label {label})
+            (label :class "cycle-text" :text {label})))
+
+(defwidget cyclewall []
+    (box :orientation "h" :space-evenly true :valign "center" :halign "center" :class "cycle-box"
+
+        (cyclewall_entry    :label "wall" 
+                            :icon "" 
+                            :class "wall-image" 
+                            :onclick "./scripts/wall.sh & eww close cyclewall")
+        (powermenu_entry    :label "Cancelar" 
+                            :icon "󰅖" 
+                            :onclick "eww close cyclewall")
+            
+    )
+)
